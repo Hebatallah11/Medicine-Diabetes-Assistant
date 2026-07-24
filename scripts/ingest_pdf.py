@@ -1,11 +1,8 @@
 #!/usr/bin/env python
 """
 Multimodal PDF ingestion script.
-Extends the existing text-only ingestion pipeline (scripts/ingest_pdf.py) by
-also pulling out the visual content of a PDF -- embedded raster images
-(figures, charts) AND vector-drawn diagrams that don't exist as an embedded
-image (e.g. algorithm flowcharts drawn with lines/shapes, which is how most
-clinical-guideline "Figure X" algorithms are actually authored).
+Ingestion pipeline that pulling out the text and the visual content of a PDF -- embedded raster images
+(figures, charts) AND vector-drawn diagrams that don't exist as an embedded image.
 Each extracted image is:
   1. Saved to disk under --image-dir.
   2. Sent to a vision-capable LLM (via OpenRouter, same pattern as llm.py)
@@ -15,9 +12,6 @@ Each extracted image is:
   3. Wrapped in a langchain Document whose page_content is that caption and
      whose metadata points back to the saved image file, page number, and
      source PDF.
-  4. Added to the SAME Chroma collection used for text chunks (same
-     embedding model), so a normal similarity_search() query can return a
-     figure alongside regular text passages.
 Downstream, src/agent.py's context-builder can check metadata["content_type"]
 == "image" and include metadata["image_path"] when it retrieves one of
 these chunks, and src/web/app.py's WeasyPrint report renderer can embed that
@@ -49,10 +43,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from PIL import Image
 from tqdm import tqdm
 load_dotenv()
-# --------------------------------------------------------------------------
-# Configuration (mirrors scripts/ingest_pdf.py so both scripts can be run
-# against the same store/collection without extra setup)
-# --------------------------------------------------------------------------
+
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 CHROMA_PERSIST_DIRECTORY = os.getenv("CHROMA_PERSIST_DIRECTORY", "./chroma_db")
@@ -310,7 +301,7 @@ def add_documents_concurrently(
 def ingest_pdf_multimodal(
     pdf_path: Path, image_dir: Path, vector_store: Chroma, min_dim: int
 ) -> None:
-    print(f"\n📄 Processing (multimodal): {pdf_path.name}")
+    print(f"\n Processing (multimodal): {pdf_path.name}")
     candidates = extract_images_from_pdf(pdf_path, image_dir, min_dim=min_dim)
     if not candidates:
         print("  (no candidate images found)")
@@ -374,13 +365,13 @@ def main() -> None:
         print(f" Vector store persisted to: {os.path.abspath(db_path)}")
         print(f" Image files saved under: {os.path.abspath(image_dir)}")
     except FileNotFoundError as e:
-        print(f"❌ Error: {e}", file=sys.stderr)
+        print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
     except ValueError as e:
-        print(f"❌ Error: {e}", file=sys.stderr)
+        print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
     except Exception as e:
-        print(f"❌ Unexpected error: {e}", file=sys.stderr)
+        print(f"Unexpected error: {e}", file=sys.stderr)
         sys.exit(1)
 if __name__ == "__main__":
     main()
