@@ -23,4 +23,5 @@ def get_llm() -> ChatOpenAI:
             "X-Title": "Medicine Assistant",
         },
         temperature=0.7,
+        max_tokens=4096,  # 👈 إضافة هذا السطر لحل مشكلة الرصيد
     )
