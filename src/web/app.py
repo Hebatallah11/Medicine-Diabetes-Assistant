@@ -31,17 +31,17 @@ app.secret_key = os.getenv("SECRET_KEY", "dev-key-medicine-assistant")
 # Database connection
 def get_db_connection():
     database_url = os.getenv("DATABASE_URL")
-    if database_url:
-        conn = psycopg2.connect(database_url)
-    else:
-        conn = psycopg2.connect(
-            user=os.getenv("user"),
-            password=os.getenv("password"),
-            host=os.getenv("host"),
-            port=os.getenv("port"),
-            dbname=os.getenv("dbname")
-        )
-    return conn
+    
+    # رابط قاعدة بيانات Render المباشر للاحتياط
+    fallback_url = "postgresql://medicine_db_o4sx_user:PVfrBQ4jOYsvmy78uUQXdqaK9ow0NU7O@dpg-d9hs93svct5s73abbgu0-a.oregon-postgres.render.com/medicine_db_o4sx"
+    
+    url_to_use = database_url if database_url else fallback_url
+    
+    # تعديل البادئة للتوافق مع psycopg2
+    if url_to_use.startswith("postgres://"):
+        url_to_use = url_to_use.replace("postgres://", "postgresql://", 1)
+        
+    return psycopg2.connect(url_to_use)
 
 # Initialize Agent
 try:
@@ -247,7 +247,6 @@ Latest vitals and labs provided in structured data.
 
     return render_template('consult.html', patient=patient, result=result, physician_html=phys_html, patient_html=pat_html, patient_html_ar=pat_html_ar)
 
-# --- دالة جديدة لتوليد PDF باستخدام ReportLab ---
 @app.route('/consult/pdf/<report_type>', methods=('POST',))
 def consult_pdf(report_type: str):
     """Generate a PDF for a given report type using ReportLab (Pure Python)."""
@@ -294,7 +293,6 @@ def consult_pdf(report_type: str):
         for line in lines:
             line_str = line.strip()
             if line_str:
-                # معالجة النصوص وحذف الرموز العشوائية
                 formatted_line = line_str.replace('**', '')
                 story.append(Paragraph(formatted_line, normal_style))
 
