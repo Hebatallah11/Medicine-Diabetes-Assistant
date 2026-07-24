@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/medicine_assistant.egg-info/PKG-INFO
+src/medicine_assistant.egg-info/SOURCES.txt
+src/medicine_assistant.egg-info/dependency_links.txt
+src/medicine_assistant.egg-info/entry_points.txt
+src/medicine_assistant.egg-info/requires.txt
+src/medicine_assistant.egg-info/top_level.txt
+src/utils/stt.py
+src/utils/translate.py
+src/web/app.py
+tests/test_config.py
+tests/test_state.py
