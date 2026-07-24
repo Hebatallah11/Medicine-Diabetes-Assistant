@@ -1,0 +1,34 @@
+services:
+  medicine-assistant:
+    build: .
+    container_name: medicine-assistant
+    ports:
+      - "8002:8002"
+    environment:
+      - FLASK_APP=src.web.app:app
+      - FLASK_ENV=production
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - user=${user}
+      - password=${password}
+      - host=${host}
+      - port=${port}
+      - dbname=${dbname}
+    volumes:
+      - chroma_data:/app/chroma_db
+    networks:
+      - medicine-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  chroma_data:
+    driver: local
+
+networks:
+  medicine-net:
+    driver: bridge
