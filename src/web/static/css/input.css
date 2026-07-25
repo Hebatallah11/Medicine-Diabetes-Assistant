@@ -27,7 +27,7 @@
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(201 152 15 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -81,7 +81,7 @@
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(201 152 15 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -114,22 +114,13 @@
 ! tailwindcss v3.4.18 | MIT License | https://tailwindcss.com
 */
 
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
-
 *,
 ::before,
 ::after {
   box-sizing: border-box;
-  /* 1 */
   border-width: 0;
-  /* 2 */
   border-style: solid;
-  /* 2 */
   border-color: #e5e7eb;
-  /* 2 */
 }
 
 ::before,
@@ -137,76 +128,34 @@
   --tw-content: '';
 }
 
-/*
-1. Use a consistent sensible line-height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
-5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
-*/
-
 html,
 :host {
   line-height: 1.5;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
   -moz-tab-size: 4;
-  /* 3 */
   -o-tab-size: 4;
      tab-size: 4;
-  /* 3 */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /* 4 */
   font-feature-settings: normal;
-  /* 5 */
   font-variation-settings: normal;
-  /* 6 */
   -webkit-tap-highlight-color: transparent;
-  /* 7 */
 }
-
-/*
-1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-*/
 
 body {
   margin: 0;
-  /* 1 */
   line-height: inherit;
-  /* 2 */
 }
-
-/*
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-3. Ensure horizontal rules are visible by default.
-*/
 
 hr {
   height: 0;
-  /* 1 */
   color: inherit;
-  /* 2 */
   border-top-width: 1px;
-  /* 3 */
 }
-
-/*
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
-
-/*
-Remove the default font size and weight for headings.
-*/
 
 h1,
 h2,
@@ -218,56 +167,29 @@ h6 {
   font-weight: inherit;
 }
 
-/*
-Reset links to optimize for opt-in styling instead of opt-out.
-*/
-
 a {
   color: inherit;
   text-decoration: inherit;
 }
-
-/*
-Add the correct font weight in Edge and Safari.
-*/
 
 b,
 strong {
   font-weight: bolder;
 }
 
-/*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
-*/
-
 code,
 kbd,
 samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  /* 1 */
   font-feature-settings: normal;
-  /* 2 */
   font-variation-settings: normal;
-  /* 3 */
   font-size: 1em;
-  /* 4 */
 }
-
-/*
-Add the correct font size in all browsers.
-*/
 
 small {
   font-size: 80%;
 }
-
-/*
-Prevent `sub` and `sup` elements from affecting the line height in all browsers.
-*/
 
 sub,
 sup {
@@ -285,26 +207,11 @@ sup {
   top: -0.5em;
 }
 
-/*
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-3. Remove gaps between table borders by default.
-*/
-
 table {
   text-indent: 0;
-  /* 1 */
   border-color: inherit;
-  /* 2 */
   border-collapse: collapse;
-  /* 3 */
 }
-
-/*
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-3. Remove default padding in all browsers.
-*/
 
 button,
 input,
@@ -312,129 +219,65 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
-  /* 1 */
   font-feature-settings: inherit;
-  /* 1 */
   font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
-  /* 1 */
   font-weight: inherit;
-  /* 1 */
   line-height: inherit;
-  /* 1 */
   letter-spacing: inherit;
-  /* 1 */
   color: inherit;
-  /* 1 */
   margin: 0;
-  /* 2 */
   padding: 0;
-  /* 3 */
 }
-
-/*
-Remove the inheritance of text transform in Edge and Firefox.
-*/
 
 button,
 select {
   text-transform: none;
 }
 
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Remove default button styles.
-*/
-
 button,
 input:where([type='button']),
 input:where([type='reset']),
 input:where([type='submit']) {
   -webkit-appearance: button;
-  /* 1 */
   background-color: transparent;
-  /* 2 */
   background-image: none;
-  /* 2 */
 }
-
-/*
-Use the modern Firefox focus style for all focusable elements.
-*/
 
 :-moz-focusring {
   outline: auto;
 }
 
-/*
-Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
-*/
-
 :-moz-ui-invalid {
   box-shadow: none;
 }
 
-/*
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
 progress {
   vertical-align: baseline;
 }
-
-/*
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
 
-/*
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
 [type='search'] {
   -webkit-appearance: textfield;
-  /* 1 */
   outline-offset: -2px;
-  /* 2 */
 }
-
-/*
-Remove the inner padding in Chrome and Safari on macOS.
-*/
 
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
-*/
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  /* 1 */
   font: inherit;
-  /* 2 */
 }
-
-/*
-Add the correct display in Chrome and Safari.
-*/
 
 summary {
   display: list-item;
 }
-
-/*
-Removes the default spacing and border for appropriate elements.
-*/
 
 blockquote,
 dl,
@@ -469,64 +312,33 @@ menu {
   padding: 0;
 }
 
-/*
-Reset default styling for dialogs.
-*/
-
 dialog {
   padding: 0;
 }
-
-/*
-Prevent resizing textareas horizontally by default.
-*/
 
 textarea {
   resize: vertical;
 }
 
-/*
-1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
-2. Set the default placeholder color to the user's configured gray 400 color.
-*/
-
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
-  /* 1 */
   color: #9ca3af;
-  /* 2 */
 }
 
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
-  /* 1 */
   color: #9ca3af;
-  /* 2 */
 }
-
-/*
-Set the default cursor for buttons.
-*/
 
 button,
 [role="button"] {
   cursor: pointer;
 }
 
-/*
-Make sure disabled buttons don't get the pointer cursor.
-*/
-
 :disabled {
   cursor: default;
 }
-
-/*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
-*/
 
 img,
 svg,
@@ -537,22 +349,14 @@ iframe,
 embed,
 object {
   display: block;
-  /* 1 */
   vertical-align: middle;
-  /* 2 */
 }
-
-/*
-Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-*/
 
 img,
 video {
   max-width: 100%;
   height: auto;
 }
-
-/* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
@@ -991,12 +795,12 @@ video {
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(79 70 229 / var(--tw-border-opacity, 1));
+  border-color: rgb(216 201 174 / var(--tw-border-opacity, 1));
 }
 
 .bg-blue-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+  background-color: rgb(201 152 15 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-700 {
@@ -1021,7 +825,7 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity, 1));
+  background-color: rgb(216 201 174 / var(--tw-bg-opacity, 1));
 }
 
 .bg-purple-500 {
@@ -1032,11 +836,6 @@ video {
 .bg-red-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity, 1));
-}
-
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-b {
@@ -1253,7 +1052,7 @@ video {
 
 .text-blue-100 {
   --tw-text-opacity: 1;
-  color: rgb(219 234 254 / var(--tw-text-opacity, 1));
+  color: rgb(245 230 190 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-100 {
@@ -1288,7 +1087,7 @@ video {
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity, 1));
+  color: rgb(201 152 15 / var(--tw-text-opacity, 1));
 }
 
 .text-purple-100 {
@@ -1313,7 +1112,7 @@ video {
 
 .text-white {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-yellow-400 {
@@ -1422,7 +1221,7 @@ video {
 
 .hover\:bg-primary-dark:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(67 56 202 / var(--tw-bg-opacity, 1));
+  background-color: rgb(184 165 122 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-red-600\/10:hover {
@@ -1431,7 +1230,7 @@ video {
 
 .hover\:text-primary-dark:hover {
   --tw-text-opacity: 1;
-  color: rgb(67 56 202 / var(--tw-text-opacity, 1));
+  color: rgb(184 165 122 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-red-400:hover {
@@ -1441,7 +1240,7 @@ video {
 
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-yellow-300:hover {
@@ -1451,7 +1250,7 @@ video {
 
 .focus\:border-primary:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(79 70 229 / var(--tw-border-opacity, 1));
+  border-color: rgb(216 201 174 / var(--tw-border-opacity, 1));
 }
 
 .focus\:border-transparent:focus {
@@ -1471,7 +1270,7 @@ video {
 
 .focus\:ring-primary:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(201 152 15 / var(--tw-ring-opacity, 1));
 }
 
 .focus\:ring-offset-2:focus {
@@ -1552,1199 +1351,4 @@ video {
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-}
-
-/* ================================================================
-   Medicine Assistant — Design System v2
-   Palette: Deep Espresso · Warm Beige · Burnished Gold
-   Contrast-first. RTL-ready. WCAG AA compliant.
-   ================================================================ */
-
-/* ════════════════════════════════════════════════════════════════
-   § 1 — DESIGN TOKENS
-   ════════════════════════════════════════════════════════════════ */
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700;900&display=swap');
-
-:root {
-  /* ── Backgrounds ─────────────────────────────────────────── */
-  --ma-bg-page:         #EAE3D9;   /* بيج دافئ — خلفية الصفحة */
-  --ma-bg-surface:      #DDD5C8;   /* بيج أعمق — أقسام فرعية */
-  --ma-bg-card:         #FDFAF5;   /* أبيض كريمي — كروت */
-  --ma-bg-card-alt:     #F5EFE6;   /* كريمي أغمق — كروت ثانوية */
-  --ma-bg-nav:          #1A0E06;   /* إسبريسو قاتم — navbar */
-  --ma-bg-dark-section: #241509;   /* قسم Hero/Footer داكن */
-
-  /* ── Browns (تدرج البني من الأغمق للأفتح) ──────────────── */
-  --ma-brown-950:       #0F0702;
-  --ma-brown-900:       #1A0E06;
-  --ma-brown-800:       #2C1C0E;
-  --ma-brown-700:       #3D2712;   /* عناوين h1 */
-  --ma-brown-600:       #5C3A1E;   /* عناوين h2 */
-  --ma-brown-500:       #7A4E2D;   /* نص عادي */
-  --ma-brown-400:       #9C6A42;   /* nص خافت */
-  --ma-brown-300:       #BE9474;   /* حدود فاتحة */
-
-  /* ── Gold (الذهبي الأصيل) ───────────────────────────────── */
-  --ma-gold-700:        #7A5208;   /* hover داكن */
-  --ma-gold-600:        #96690A;   /* ذهبي داكن */
-  --ma-gold-500:        #B8860B;   /* ذهبي أساسي — accent */
-  --ma-gold-400:        #C9980F;   /* ذهبي متوسط */
-  --ma-gold-300:        #D4AA3A;   /* ذهبي فاتح */
-  --ma-gold-200:        #E8CC80;   /* ذهبي ناعم */
-  --ma-gold-100:        #F5E9C0;   /* ذهبي شاحب — avatar bg */
-  --ma-gold-50:         #FBF5E0;   /* ذهبي شفاف */
-
-  /* ── Borders ─────────────────────────────────────────────── */
-  --ma-border-strong:   #9C7A5C;   /* حد قوي — بطاقات بارزة */
-  --ma-border-mid:      #B8A090;   /* حد متوسط — inputs */
-  --ma-border-subtle:   #CEC5B8;   /* حد خفيف */
-
-  /* ── Text ────────────────────────────────────────────────── */
-  --ma-text-heading:    #1A0E06;   /* أقصى تباين — 18:1 على بيج */
-  --ma-text-body:       #2C1C0E;   /* نص أساسي — 15:1 على بيج */
-  --ma-text-secondary:  #5C3A1E;   /* نص ثانوي — 7:1 */
-  --ma-text-muted:      #7A5C3C;   /* نص خافت — 4.6:1 */
-  --ma-text-on-dark:    #F5EFE6;   /* نص على خلفية داكنة */
-  --ma-text-on-gold:    #2C1C0E;   /* نص على ذهبي */
-
-  /* ── Semantic ─────────────────────────────────────────────── */
-  --ma-danger:          #9B2226;
-  --ma-danger-bg:       #F9EBEB;
-  --ma-success:         #1A6B35;
-  --ma-success-bg:      #E8F5ED;
-
-  /* ── Shadows ─────────────────────────────────────────────── */
-  --ma-shadow-sm:       0 1px 4px rgba(26, 14, 6, 0.08);
-  --ma-shadow-md:       0 4px 14px rgba(26, 14, 6, 0.11);
-  --ma-shadow-lg:       0 10px 30px rgba(26, 14, 6, 0.16);
-  --ma-shadow-hover:    0 8px 26px rgba(26, 14, 6, 0.20);
-
-  /* ── Radii ───────────────────────────────────────────────── */
-  --ma-radius-sm:       8px;
-  --ma-radius-md:       12px;
-  --ma-radius-lg:       18px;
-  --ma-radius-xl:       24px;
-
-  /* ── Typography ──────────────────────────────────────────── */
-  --ma-font-display:    'Cairo', 'Tajawal', ui-sans-serif, system-ui, sans-serif;
-  --ma-font-body:       'Tajawal', ui-sans-serif, system-ui, sans-serif;
-  --ma-font-mono:       'SFMono-Regular', 'Menlo', monospace;
-
-  /* ── Transitions ─────────────────────────────────────────── */
-  --ma-transition-fast: 0.15s ease;
-  --ma-transition-base: 0.22s ease;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 2 — BASE RESET & ROOT STYLES
-   ════════════════════════════════════════════════════════════════ */
-
-html, body {
-  background-color: var(--ma-bg-page) !important;
-  background-image: none !important;
-  color: var(--ma-text-body) !important;
-  font-family: var(--ma-font-body) !important;
-  font-size: 16px !important;
-  line-height: 1.7 !important;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box !important;
-}
-
-/* ── Tailwind dark bg overrides ────────────────────────────── */
-.bg-slate-900, .bg-slate-800,
-.bg-gray-900, .bg-gray-800, .bg-gray-700,
-.bg-zinc-900, .bg-black,
-[class*="bg-slate-"], [class*="bg-gray-"] {
-  background-color: var(--ma-bg-page) !important;
-  background-image: none !important;
-}
-
-main, section, article {
-  background-color: var(--ma-bg-page) !important;
-  background-image: none !important;
-}
-
-section:nth-of-type(even) {
-  background-color: var(--ma-bg-surface) !important;
-}
-
-[class*="from-gray"], [class*="via-gray"], [class*="to-gray"],
-[class*="bg-gradient"],
-.bg-gradient-to-b, .from-gray-900, .via-gray-800, .to-gray-900 {
-  background-image: none !important;
-  background-color: var(--ma-bg-page) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 3 — TYPOGRAPHY SYSTEM
-   Max contrast on every heading level.
-   ════════════════════════════════════════════════════════════════ */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ma-font-display) !important;
-  text-shadow: none !important;
-  margin: 0 !important;
-  line-height: 1.25 !important;
-}
-
-h1 {
-  color: var(--ma-text-heading) !important;
-  font-size: clamp(2rem, 4vw, 3rem) !important;
-  font-weight: 900 !important;
-  letter-spacing: -0.025em !important;
-}
-
-h2 {
-  color: var(--ma-brown-800) !important;
-  font-size: clamp(1.5rem, 3vw, 2.25rem) !important;
-  font-weight: 800 !important;
-  letter-spacing: -0.02em !important;
-}
-
-h3 {
-  color: var(--ma-brown-700) !important;
-  font-size: clamp(1.1rem, 2vw, 1.5rem) !important;
-  font-weight: 700 !important;
-}
-
-h4, h5, h6 {
-  color: var(--ma-brown-600) !important;
-  font-weight: 700 !important;
-}
-
-p {
-  color: var(--ma-text-body) !important;
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  line-height: 1.75 !important;
-  text-shadow: none !important;
-}
-
-li {
-  color: var(--ma-text-body) !important;
-  font-weight: 400 !important;
-  line-height: 1.7 !important;
-}
-
-label {
-  color: var(--ma-brown-700) !important;
-  font-weight: 600 !important;
-  font-size: 0.875rem !important;
-  letter-spacing: 0.01em !important;
-}
-
-small, .text-sm {
-  font-size: 0.875rem !important;
-}
-
-strong, b {
-  font-weight: 700 !important;
-  color: var(--ma-brown-700) !important;
-}
-
-span {
-  color: inherit !important;
-}
-
-/* ── Override faint Tailwind text colors ───────────────────── */
-.text-white:not(button *):not([class*="bg-primary"] *):not([class*="bg-indigo"] *):not([class*="bg-blue"] *) {
-  color: var(--ma-text-body) !important;
-}
-
-.text-gray-100, .text-gray-200 {
-  color: var(--ma-text-body) !important;
-}
-
-.text-gray-300, .text-gray-400, .text-gray-500 {
-  color: var(--ma-text-muted) !important;
-}
-
-.text-blue-100, .text-purple-100, .text-green-100,
-.text-blue-200, .text-purple-200, .text-green-200 {
-  color: var(--ma-text-secondary) !important;
-}
-
-.text-primary {
-  color: var(--ma-gold-600) !important;
-  font-weight: 700 !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 4 — NAVIGATION
-   ════════════════════════════════════════════════════════════════ */
-
-header, nav {
-  background-color: var(--ma-bg-nav) !important;
-  background-image: none !important;
-  border-bottom: 2px solid var(--ma-gold-500) !important;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45) !important;
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 100 !important;
-}
-
-header *, nav * {
-  color: var(--ma-text-on-dark) !important;
-  background-color: transparent !important;
-}
-
-header [class*="brand"],
-header [class*="logo"],
-header h1, nav h1 {
-  color: var(--ma-text-on-dark) !important;
-  font-family: var(--ma-font-display) !important;
-  font-weight: 800 !important;
-  letter-spacing: -0.01em !important;
-}
-
-header a, nav a {
-  color: var(--ma-gold-200) !important;
-  font-weight: 500 !important;
-  text-decoration: none !important;
-  transition: color var(--ma-transition-fast) !important;
-}
-
-header a:hover, nav a:hover {
-  color: var(--ma-gold-400) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 5 — CARDS
-   Three tiers: grid cards · standalone rounded · patient card
-   ════════════════════════════════════════════════════════════════ */
-
-/* ── Grid / flex containers — transparent ──────────────────── */
-.grid, [class*="grid"] {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* ── Wrapper divs (contain inner cards) — transparent ──────── */
-div.rounded-3xl:has(> .grid),
-div.rounded-3xl:has(> div.rounded-2xl),
-div.rounded-3xl:has(> div.rounded-xl),
-div.rounded-xl:has(> .grid),
-div.rounded-xl:has(> div.rounded-2xl),
-div.rounded-xl:has(> div.rounded-3xl),
-div.rounded-2xl:has(> .grid),
-div.rounded-2xl:has(> div.rounded-2xl),
-div.rounded-2xl:has(> div.rounded-3xl),
-div.rounded-lg:has(> .grid),
-div.rounded-lg:has(> div.rounded-2xl),
-div.rounded-md:has(> div.rounded-md) {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-}
-
-/* ── Base card style (leaf-level) ──────────────────────────── */
-.grid > div,
-.card,
-div.rounded-3xl,
-div.rounded-2xl,
-div.rounded-xl,
-div.rounded-lg,
-div.rounded-md {
-  background-color: var(--ma-bg-card) !important;
-  border: 1.5px solid var(--ma-border-subtle) !important;
-  border-top: 3px solid transparent !important;
-  border-radius: var(--ma-radius-md) !important;
-  padding: 1.75rem 2rem !important;
-  box-shadow: var(--ma-shadow-sm) !important;
-  position: relative !important;
-  transition:
-    box-shadow var(--ma-transition-base),
-    border-color var(--ma-transition-base),
-    border-top-color var(--ma-transition-base),
-    transform var(--ma-transition-fast) !important;
-}
-
-/* ── Card hover ────────────────────────────────────────────── */
-.grid > div:hover,
-.card:hover,
-div.rounded-3xl:hover,
-div.rounded-2xl:hover,
-div.rounded-xl:hover,
-div.rounded-lg:hover,
-div.rounded-md:hover {
-  border-color: var(--ma-border-strong) !important;
-  border-top-color: var(--ma-gold-500) !important;
-  box-shadow: var(--ma-shadow-hover) !important;
-  transform: translateY(-3px) !important;
-}
-
-/* ── Inner transparency (no double-card) ───────────────────── */
-.grid > div > div.rounded-3xl,
-.grid > div > div.rounded-2xl,
-.grid > div > div.rounded-xl,
-.grid > div > div.rounded-lg,
-.grid > div > div.rounded-md,
-.grid > div > .card {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  transform: none !important;
-}
-
-/* ── Card typography ───────────────────────────────────────── */
-.grid > div h2, .grid > div h3, .grid > div h4,
-div.rounded-2xl h2, div.rounded-2xl h3, div.rounded-2xl h4,
-div.rounded-xl  h2, div.rounded-xl  h3, div.rounded-xl  h4,
-div.rounded-lg  h2, div.rounded-lg  h3,
-div.rounded-3xl h2, div.rounded-3xl h3 {
-  color: var(--ma-brown-800) !important;
-  font-weight: 800 !important;
-  margin-bottom: 0.5rem !important;
-}
-
-.grid > div p, .grid > div span, .grid > div li,
-div.rounded-2xl p, div.rounded-2xl span, div.rounded-2xl li,
-div.rounded-xl  p, div.rounded-xl  span,
-div.rounded-lg  p, div.rounded-lg  span,
-div.rounded-md  p, div.rounded-md  span,
-div.rounded-3xl p, div.rounded-3xl span {
-  color: var(--ma-text-secondary) !important;
-  font-weight: 400 !important;
-  line-height: 1.7 !important;
-}
-
-/* Step numbers */
-.grid > div .text-primary,
-div.rounded-2xl .text-primary,
-div.rounded-xl  .text-primary {
-  color: var(--ma-gold-600) !important;
-  font-weight: 800 !important;
-}
-
-/* Grid card alignment */
-.grid > div {
-  padding: 1.75rem 1.5rem !important;
-  text-align: center !important;
-}
-
-.grid > div h3, .grid > div h4 {
-  font-size: 1.05rem !important;
-  font-weight: 800 !important;
-  margin-bottom: 0.4rem !important;
-}
-
-.grid > div p, .grid > div span {
-  font-size: 0.9rem !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 6 — PATIENT CARD
-   ════════════════════════════════════════════════════════════════ */
-
-.patient-card {
-  background-color: var(--ma-bg-card) !important;
-  border: 1.5px solid var(--ma-border-subtle) !important;
-  border-top: 3px solid var(--ma-gold-500) !important;
-  border-radius: var(--ma-radius-md) !important;
-  box-shadow: var(--ma-shadow-sm) !important;
-  padding: 2rem 2.25rem 1.75rem !important;  /* مسافة داخلية أوفر */
-  transition:
-    box-shadow var(--ma-transition-base),
-    border-color var(--ma-transition-base) !important;
-  overflow: visible !important;
-}
-
-.patient-card:hover {
-  border-color: var(--ma-border-strong) !important;
-  box-shadow: var(--ma-shadow-hover) !important;
-}
-
-/* Patient name */
-.patient-card h2, .patient-card h3,
-.patient-card h2.text-white, .patient-card h3.text-white {
-  color: var(--ma-text-heading) !important;
-  font-weight: 800 !important;
-}
-
-/* Divider inside card */
-.patient-card .border-t, .patient-card .border-gray-700 {
-  border-top-color: var(--ma-border-subtle) !important;
-}
-
-/* Secondary info */
-.patient-card .text-gray-400 { color: var(--ma-text-muted) !important; }
-.patient-card .text-gray-200 {
-  color: var(--ma-brown-700) !important;
-  font-weight: 600 !important;
-}
-
-/* Icons */
-.patient-card svg.text-gray-500 {
-  color: var(--ma-brown-500) !important;
-}
-
-/* Badge (T1D / T2D) */
-.patient-card .rounded-full {
-  background-color: var(--ma-gold-100) !important;
-  color: var(--ma-brown-800) !important;
-  border: 1.5px solid var(--ma-gold-300) !important;
-  font-weight: 700 !important;
-  font-size: 0.75rem !important;
-  letter-spacing: 0.04em !important;
-}
-
-/* Consult link */
-.patient-card a.text-primary {
-  color: var(--ma-gold-700) !important;
-  font-weight: 700 !important;
-  border-radius: var(--ma-radius-sm) !important;
-  padding: 0.15rem 0.4rem !important;
-  transition: background-color var(--ma-transition-fast) !important;
-}
-
-.patient-card a.text-primary:hover {
-  background-color: var(--ma-gold-100) !important;
-}
-
-/* Edit link */
-.patient-card a.text-yellow-400 {
-  color: var(--ma-brown-600) !important;
-  font-weight: 600 !important;
-  border-radius: var(--ma-radius-sm) !important;
-  padding: 0.15rem 0.4rem !important;
-}
-
-.patient-card a.text-yellow-400:hover {
-  background-color: var(--ma-gold-100) !important;
-  color: var(--ma-brown-800) !important;
-}
-
-/* Delete button — compact, danger red */
-.patient-card button[title="Delete"] {
-  background: transparent !important;
-  border: 1.5px solid rgba(155, 34, 38, 0.3) !important;
-  padding: 0.2rem 0.55rem !important;
-  font-size: 0.8rem !important;
-  font-weight: 700 !important;
-  border-radius: var(--ma-radius-sm) !important;
-  color: var(--ma-danger) !important;
-  min-width: auto !important;
-  white-space: nowrap !important;
-  transition: background-color var(--ma-transition-fast),
-              border-color var(--ma-transition-fast) !important;
-}
-
-.patient-card button[title="Delete"]:hover {
-  background-color: var(--ma-danger-bg) !important;
-  border-color: var(--ma-danger) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 7 — BUTTONS
-   Two variants: Primary (filled) · Secondary (outlined)
-   ════════════════════════════════════════════════════════════════ */
-
-/* ── Primary CTA ────────────────────────────────────────────── */
-.bg-primary,
-button.bg-primary,
-.bg-indigo-600,
-.bg-blue-600,
-[class*="bg-primary"]:not([class*="text-"]):not([class*="border-"]) {
-  background-color: var(--ma-brown-800) !important;
-  color: var(--ma-text-on-dark) !important;
-  font-family: var(--ma-font-display) !important;
-  font-weight: 700 !important;
-  font-size: 0.95rem !important;
-  letter-spacing: 0.025em !important;
-  border: 2px solid var(--ma-gold-500) !important;
-  border-radius: var(--ma-radius-sm) !important;
-  padding: 0.65rem 1.6rem !important;
-  box-shadow: 0 3px 14px rgba(26, 14, 6, 0.28),
-              inset 0 1px 0 rgba(212, 170, 58, 0.2) !important;
-  transition:
-    background-color var(--ma-transition-fast),
-    box-shadow var(--ma-transition-fast),
-    transform var(--ma-transition-fast) !important;
-  cursor: pointer !important;
-}
-
-/* ══ ABSOLUTE RULE: أي زرار خلفيته بنية غامقة → النص بيج دائماً ══
-   هذه القاعدة لا تُلغى بأي ظرف — تشمل النص والأيقونات والـ SVG */
-.bg-primary,
-.bg-primary *,
-button.bg-primary,
-button.bg-primary *,
-[class*="bg-primary"],
-[class*="bg-primary"] *,
-.bg-indigo-600,
-.bg-indigo-600 *,
-.bg-blue-600,
-.bg-blue-600 *,
-[aria-pressed="true"],
-[aria-pressed="true"] *,
-[data-state="active"],
-[data-state="active"] * {
-  color: #F5EFE6 !important;
-}
-
-.bg-primary svg,
-button.bg-primary svg,
-[class*="bg-primary"] svg,
-.bg-indigo-600 svg,
-.bg-blue-600 svg,
-[aria-pressed="true"] svg,
-[data-state="active"] svg {
-  fill: #F5EFE6 !important;
-  stroke: #F5EFE6 !important;
-  color: #F5EFE6 !important;
-}
-
-/* ── الزر الأول في الـ Hero (dark box without class) ──────────
-   أي button أو a يحمل خلفية بنية غامقة صريحة (bg-brown/dark)    */
-button[class*="bg-brown"],
-a[class*="bg-brown"],
-button[style*="background-color: #2C"],
-button[style*="background:#2C"],
-/* الزر الكبير بجانب "View Patients" في الـ Hero */
-[class*="hero"] button,
-[class*="hero"] a[class*="btn"],
-[class*="hero"] a[class*="button"] {
-  color: #F5EFE6 !important;
-}
-
-[class*="hero"] button *,
-[class*="hero"] a[class*="btn"] *,
-[class*="hero"] a[class*="button"] * {
-  color: #F5EFE6 !important;
-}
-
-.bg-primary:hover,
-.bg-indigo-600:hover,
-.bg-blue-600:hover,
-.hover\:bg-primary-dark:hover {
-  background-color: var(--ma-brown-900) !important;
-  border-color: var(--ma-gold-400) !important;
-  box-shadow: 0 6px 22px rgba(26, 14, 6, 0.38) !important;
-  transform: translateY(-1px) !important;
-}
-
-/* Duplicate removed — covered by ABSOLUTE RULE above */
-
-/* ── Secondary / Outline ────────────────────────────────────── */
-button:not([class*="bg-primary"]):not([class*="bg-indigo"]):not([class*="bg-blue"]) {
-  background-color: transparent !important;
-  color: var(--ma-brown-700) !important;
-  font-family: var(--ma-font-body) !important;
-  font-weight: 600 !important;
-  border: 2px solid var(--ma-border-strong) !important;
-  border-radius: var(--ma-radius-sm) !important;
-  padding: 0.6rem 1.4rem !important;
-  transition:
-    background-color var(--ma-transition-fast),
-    border-color var(--ma-transition-fast),
-    color var(--ma-transition-fast) !important;
-  cursor: pointer !important;
-}
-
-button:not([class*="bg-primary"]):not([class*="bg-indigo"]):not([class*="bg-blue"]):hover {
-  background-color: var(--ma-gold-50) !important;
-  border-color: var(--ma-gold-500) !important;
-  color: var(--ma-brown-900) !important;
-}
-
-/* ── Unified compact card buttons (أزرار الكارت موحدة وأصغر) ── */
-.patient-card button,
-.patient-card a[href],
-.grid > div button,
-div.rounded-2xl button,
-div.rounded-xl button,
-div.rounded-lg button {
-  padding: 0.25rem 0.6rem !important;
-  font-size: 0.78rem !important;
-  font-weight: 600 !important;
-  border-radius: 6px !important;
-  border-width: 1.5px !important;
-  min-width: 0 !important;
-  width: auto !important;
-  white-space: nowrap !important;
-  line-height: 1.4 !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-/* Exception: primary CTA (bg-primary) in card — slightly bigger but still compact */
-.patient-card button[class*="bg-primary"],
-.grid > div button[class*="bg-primary"],
-div.rounded-2xl button[class*="bg-primary"],
-div.rounded-xl button[class*="bg-primary"] {
-  padding: 0.3rem 0.75rem !important;
-  font-size: 0.82rem !important;
-}
-
-/* ── فاصل لوني ثابت بين الأزرار داخل كل كارت ────────────────
-   يُطبَّق على كل زرار ثانٍ فما بعد داخل نفس الحاوية             */
-.patient-card button + button,
-.patient-card button + a,
-.patient-card a + button,
-.patient-card a + a,
-.grid > div button + button,
-.grid > div button + a,
-.grid > div a + button {
-  border-left: 1.5px solid var(--ma-border-mid) !important;
-  margin-left: 0.35rem !important;
-  padding-left: 0.6rem !important;
-}
-
-/* فاصل العنصر الأول من اليمين في RTL */
-[dir="rtl"] .patient-card button + button,
-[dir="rtl"] .patient-card button + a,
-[dir="rtl"] .patient-card a + button {
-  border-left: none !important;
-  border-right: 1.5px solid var(--ma-border-mid) !important;
-  margin-left: 0 !important;
-  margin-right: 0.35rem !important;
-  padding-left: 0 !important;
-  padding-right: 0.6rem !important;
-}
-
-/* ── Toggle / tab active state ──────────────────────────────── */
-[class*="toggle"] button[class*="active"],
-[class*="toggle"] button.bg-primary,
-[aria-pressed="true"],
-[data-state="active"] {
-  background-color: var(--ma-brown-700) !important;
-  color: var(--ma-text-on-dark) !important;
-}
-
-[class*="toggle"] button[class*="active"] svg,
-[aria-pressed="true"] svg,
-[data-state="active"] svg {
-  fill: var(--ma-text-on-dark) !important;
-  stroke: var(--ma-text-on-dark) !important;
-  color: var(--ma-text-on-dark) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 8 — FORM INPUTS
-   ════════════════════════════════════════════════════════════════ */
-
-input, textarea, select {
-  background-color: #FFFFFF !important;
-  border: 1.5px solid var(--ma-border-mid) !important;
-  color: var(--ma-text-heading) !important;
-  font-family: var(--ma-font-body) !important;
-  font-weight: 500 !important;
-  font-size: 0.95rem !important;
-  border-radius: var(--ma-radius-sm) !important;
-  padding: 0.6rem 1rem !important;
-  transition:
-    border-color var(--ma-transition-fast),
-    box-shadow var(--ma-transition-fast) !important;
-  line-height: 1.5 !important;
-}
-
-input:focus, textarea:focus, select:focus {
-  border-color: var(--ma-gold-500) !important;
-  box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.18) !important;
-  outline: none !important;
-}
-
-input::placeholder, textarea::placeholder,
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: var(--ma-brown-400) !important;
-  opacity: 0.8 !important;
-}
-
-.placeholder-gray-400::-moz-placeholder,
-.placeholder-gray-400::placeholder {
-  color: var(--ma-brown-400) !important;
-}
-
-.focus\:ring-primary:focus   { --tw-ring-color: rgba(184, 134, 11, 0.28) !important; }
-.focus\:border-primary:focus { border-color: var(--ma-gold-500) !important; }
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 9 — PILLS & BADGES
-   ════════════════════════════════════════════════════════════════ */
-
-.rounded-full:not(.patient-card *):not(.grid > div *) {
-  background-color: transparent !important;
-  color: var(--ma-brown-700) !important;
-  border: 1.5px solid var(--ma-brown-400) !important;
-  font-weight: 600 !important;
-  font-size: 0.8rem !important;
-  letter-spacing: 0.03em !important;
-  padding: 0.2rem 0.75rem !important;
-}
-
-/* Avatar circles in team/grid cards */
-.grid > div .rounded-full,
-div.rounded-2xl .rounded-full,
-div.rounded-xl  .rounded-full,
-div.rounded-lg  .rounded-full,
-div.rounded-3xl .rounded-full,
-[class*="avatar"], [class*="initials"],
-[class*="team"] .rounded-full,
-[id*="team"]    .rounded-full {
-  background-color: var(--ma-gold-100) !important;
-  color: var(--ma-brown-800) !important;
-  border: 2px solid var(--ma-gold-300) !important;
-  font-weight: 700 !important;
-  padding: 0 !important;
-  box-shadow: none !important;
-}
-
-/* Status dots */
-.bg-green-500  { background-color: var(--ma-success)  !important; }
-.bg-red-900    { background-color: var(--ma-danger)   !important; }
-.bg-blue-500   { background-color: var(--ma-brown-500) !important; }
-.bg-purple-500 { background-color: var(--ma-brown-600) !important; }
-.bg-secondary  {
-  background-color: var(--ma-brown-400) !important;
-  border: 1.5px solid var(--ma-gold-400) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 10 — LINKS
-   ════════════════════════════════════════════════════════════════ */
-
-a {
-  color: var(--ma-brown-600) !important;
-  text-decoration: none !important;
-  transition: color var(--ma-transition-fast) !important;
-}
-
-a:hover {
-  color: var(--ma-gold-700) !important;
-}
-
-/* Left-accent borders (step cards) */
-.border-l-4, .border-primary {
-  border-color: var(--ma-gold-500) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 11 — TABLES
-   ════════════════════════════════════════════════════════════════ */
-
-table {
-  border-collapse: collapse !important;
-  width: 100% !important;
-}
-
-table th {
-  background-color: var(--ma-brown-800) !important;
-  color: var(--ma-text-on-dark) !important;
-  font-weight: 700 !important;
-  font-size: 0.85rem !important;
-  letter-spacing: 0.04em !important;
-  padding: 0.75rem 1rem !important;
-  text-align: right !important;
-}
-
-table td {
-  color: var(--ma-text-body) !important;
-  padding: 0.65rem 1rem !important;
-  border-bottom: 1px solid var(--ma-border-subtle) !important;
-  font-weight: 400 !important;
-}
-
-table tr:hover {
-  background-color: rgba(184, 134, 11, 0.07) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 12 — BORDERS & DIVIDERS
-   ════════════════════════════════════════════════════════════════ */
-
-.border-gray-600, .border-gray-700, .border-gray-800 {
-  border-color: var(--ma-border-subtle) !important;
-}
-
-.divide-gray-700 > :not([hidden]) ~ :not([hidden]) {
-  border-color: var(--ma-border-subtle) !important;
-}
-
-hr {
-  border-color: var(--ma-border-subtle) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 13 — HOVER UTILITIES (Tailwind overrides)
-   ════════════════════════════════════════════════════════════════ */
-
-.hover\:bg-gray-600:hover,
-.hover\:bg-gray-700:hover,
-.hover\:bg-gray-700\/40:hover,
-.hover\:bg-gray-800\/40:hover,
-.hover\:bg-gray-800\/60:hover {
-  background-color: rgba(184, 134, 11, 0.1) !important;
-}
-
-.hover\:text-primary-dark:hover { color: var(--ma-brown-900) !important; }
-.hover\:text-white:hover         { color: var(--ma-text-on-dark) !important; }
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 14 — FOOTER
-   ════════════════════════════════════════════════════════════════ */
-
-footer, [class*="footer"] {
-  background-color: var(--ma-bg-dark-section) !important;
-  border-top: 2px solid var(--ma-gold-600) !important;
-  padding-top: 3rem !important;
-  padding-bottom: 2rem !important;
-}
-
-footer *, [class*="footer"] * {
-  color: var(--ma-gold-200) !important;
-}
-
-footer p, [class*="footer"] p,
-footer span, [class*="footer"] span {
-  color: rgba(245, 239, 230, 0.7) !important;
-  font-weight: 400 !important;
-}
-
-footer h2, footer h3, footer h4,
-[class*="footer"] h2, [class*="footer"] h3 {
-  color: var(--ma-text-on-dark) !important;
-  font-weight: 700 !important;
-}
-
-footer a, [class*="footer"] a {
-  color: var(--ma-gold-300) !important;
-  text-decoration: underline !important;
-  text-decoration-color: rgba(212, 170, 58, 0.4) !important;
-  text-underline-offset: 3px !important;
-}
-
-footer a:hover, [class*="footer"] a:hover {
-  color: var(--ma-gold-200) !important;
-  text-decoration-color: var(--ma-gold-300) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 15 — TEAM SECTION
-   ════════════════════════════════════════════════════════════════ */
-
-[class*="team"] h3, [id*="team"] h3,
-[class*="team"] .font-semibold, [class*="team"] .font-bold,
-[class*="team"] strong, [id*="team"] .font-semibold {
-  color: var(--ma-brown-900) !important;
-  font-weight: 800 !important;
-}
-
-[class*="team"] .grid > div:hover,
-[id*="team"]    .grid > div:hover {
-  border-color: var(--ma-gold-400) !important;
-  box-shadow: var(--ma-shadow-hover) !important;
-}
-
-/* LinkedIn links — unified */
-a[href*="salma-t-shaheen"],
-a[href*="hebatallah-abuharb"],
-a[href*="zahraa-alderawi"],
-a[href*="linkedin.com"] {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.35rem !important;
-  color: var(--ma-brown-700) !important;
-  font-weight: 700 !important;
-  font-size: 0.875rem !important;
-  text-decoration: underline !important;
-  text-decoration-color: var(--ma-gold-400) !important;
-  text-underline-offset: 3px !important;
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-  transition: color var(--ma-transition-fast),
-              text-decoration-color var(--ma-transition-fast) !important;
-}
-
-a[href*="salma-t-shaheen"]:hover,
-a[href*="hebatallah-abuharb"]:hover,
-a[href*="zahraa-alderawi"]:hover,
-a[href*="linkedin.com"]:hover {
-  color: var(--ma-gold-700) !important;
-  text-decoration-color: var(--ma-gold-600) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 16 — TEXT-ON-DARK OVERRIDES
-   Ensure text that should remain light on dark backgrounds
-   doesn't get overridden by earlier beige-forced rules.
-   ════════════════════════════════════════════════════════════════ */
-
-/* Inside dark bg: force text to remain light */
-.bg-slate-900 *, .bg-gray-900 *, .bg-gray-800 *, .bg-gray-700 *,
-.bg-zinc-900 *, .bg-black * {
-  color: var(--ma-text-body) !important;
-}
-
-.bg-slate-900 h1, .bg-gray-900 h1,
-.bg-slate-900 h2, .bg-gray-900 h2 {
-  color: var(--ma-brown-700) !important;
-}
-
-/* In gradient-overridden sections — keep text dark (now on beige) */
-[class*="from-gray"] *, .bg-gradient-to-b *,
-.from-gray-900 * {
-  color: var(--ma-text-body) !important;
-}
-
-[class*="from-gray"] h1, [class*="bg-gradient"] h1,
-.from-gray-900 h1, .bg-gradient-to-b h1 {
-  color: var(--ma-brown-700) !important;
-  font-weight: 900 !important;
-}
-
-[class*="from-gray"] h2, [class*="bg-gradient"] h2,
-.from-gray-900 h2, .bg-gradient-to-b h2 {
-  color: var(--ma-brown-800) !important;
-  font-weight: 800 !important;
-}
-
-/* Text inside dark primary buttons — always light */
-.text-white,
-.bg-primary .text-white,
-[class*="bg-primary"] .text-white,
-button.text-white, button .text-white,
-.bg-indigo-600.text-white, .bg-blue-600.text-white {
-  color: var(--ma-text-on-dark) !important;
-}
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 17 — CONTRAST SAFETY NET
-   Last rules in file — highest specificity safety floor.
-   ════════════════════════════════════════════════════════════════ */
-
-/* Cards containing grids — zero decoration (wrapper) */
-div.rounded-3xl:has(> div),
-div.rounded-xl:not(:has(> div.rounded-3xl)):not(:has(> div.rounded-2xl)) {
-  padding: 2rem 2.5rem !important;
-}
-
-/* Grid leaf card center layout */
-.grid > div {
-  padding: 1.75rem 1.5rem !important;
-  text-align: center !important;
-}
-
-.grid > div h3, .grid > div h4 {
-  font-size: 1.05rem !important;
-  font-weight: 800 !important;
-  margin-bottom: 0.4rem !important;
-  color: var(--ma-brown-800) !important;
-}
-
-.grid > div p, .grid > div span {
-  font-size: 0.9rem !important;
-  color: var(--ma-text-secondary) !important;
-  font-weight: 400 !important;
-}
-
-/* Step number accent */
-.grid > div .text-primary,
-div.rounded-2xl .text-primary,
-div.rounded-xl  .text-primary {
-  color: var(--ma-gold-600) !important;
-  font-weight: 800 !important;
-}
-
-/* Navbar final override — absolute highest contrast */
-header, nav {
-  background-color: #1A0E06 !important;
-  background-image: none !important;
-}
-
-header *, nav * {
-  color: #F5EFE6 !important;
-  background-color: transparent !important;
-}
-
-header a, nav a { color: #E8CC80 !important; }
-header a:hover, nav a:hover { color: #D4AA3A !important; }
-
-
-/* ════════════════════════════════════════════════════════════════
-   § 18 — FEATURES SECTION + LAYOUT FIXES
-   ════════════════════════════════════════════════════════════════ */
-
-/* ── A) الصندوق الكبير "Built for Clinical Workflows"
-   خلفية: بيج الصفحة | إطار: بني غامق عريض | عنوان: ذهبي
-   نص: من اليسار لا من المنتصف
-   نستهدفه بـ [class*="feature"] أو أي div كبير بلا grid داخله ─── */
-
-/* الصندوق الكبير — تعريف صريح */
-[class*="feature"] > div:not(:has(.grid)):not(.patient-card),
-[class*="workflow"] > div,
-[class*="clinical"] > div,
-/* fallback: أي rounded-card كبير لا يحتوي grid */
-section > div.rounded-3xl:not(:has(.grid)),
-section > div.rounded-2xl:not(:has(.grid)),
-section > div.rounded-xl:not(:has(.grid)),
-/* الـ wrapper الأول من اليسار في قسم Features */
-section > div > div.rounded-3xl:not(:has(.grid)),
-section > div > div.rounded-2xl:not(:has(.grid)) {
-  background-color: var(--ma-bg-page) !important;
-  border: 2.5px solid var(--ma-brown-800) !important;
-  border-top: 3px solid var(--ma-brown-800) !important;
-  text-align: left !important;
-}
-
-/* عنوان الصندوق الكبير — ذهبي */
-[class*="feature"] > div:not(:has(.grid)) h1,
-[class*="feature"] > div:not(:has(.grid)) h2,
-[class*="workflow"] > div h1,
-[class*="workflow"] > div h2,
-section > div.rounded-3xl:not(:has(.grid)) h1,
-section > div.rounded-3xl:not(:has(.grid)) h2,
-section > div.rounded-2xl:not(:has(.grid)) h1,
-section > div.rounded-2xl:not(:has(.grid)) h2,
-section > div > div.rounded-3xl:not(:has(.grid)) h1,
-section > div > div.rounded-3xl:not(:has(.grid)) h2,
-section > div > div.rounded-2xl:not(:has(.grid)) h1,
-section > div > div.rounded-2xl:not(:has(.grid)) h2 {
-  color: var(--ma-gold-600) !important;
-  font-weight: 900 !important;
-  text-align: left !important;
-}
-
-/* نص الصندوق الكبير — بني داكن من اليسار */
-[class*="feature"] > div:not(:has(.grid)) p,
-[class*="feature"] > div:not(:has(.grid)) li,
-[class*="workflow"] > div p,
-[class*="workflow"] > div li,
-section > div.rounded-3xl:not(:has(.grid)) p,
-section > div.rounded-3xl:not(:has(.grid)) li,
-section > div.rounded-2xl:not(:has(.grid)) p,
-section > div.rounded-2xl:not(:has(.grid)) li,
-section > div > div.rounded-3xl:not(:has(.grid)) p,
-section > div > div.rounded-3xl:not(:has(.grid)) li,
-section > div > div.rounded-2xl:not(:has(.grid)) p,
-section > div > div.rounded-2xl:not(:has(.grid)) li {
-  color: var(--ma-text-body) !important;
-  text-align: left !important;
-}
-
-section > div.rounded-3xl:not(:has(.grid)) ul,
-section > div.rounded-2xl:not(:has(.grid)) ul,
-section > div > div.rounded-3xl:not(:has(.grid)) ul,
-section > div > div.rounded-2xl:not(:has(.grid)) ul {
-  text-align: left !important;
-  padding-right: 0 !important;
-}
-
-/* ── B) الصناديق الصغيرة (Real-time / Evidence / Secure / Extensible)
-   إطار عريض بني غامق — خلفية بيج — نص بني داكن
-   (المستخدم طلب إطار عريض بني غامق، لا خلفية سوداء)             */
-section .grid > div:not(.patient-card),
-main   .grid > div:not(.patient-card) {
-  background-color: var(--ma-bg-card) !important;
-  border: 2.5px solid var(--ma-brown-800) !important;
-  border-top: 3px solid var(--ma-brown-800) !important;
-}
-
-section .grid > div:not(.patient-card) h2,
-section .grid > div:not(.patient-card) h3,
-section .grid > div:not(.patient-card) h4,
-main   .grid > div:not(.patient-card) h2,
-main   .grid > div:not(.patient-card) h3,
-main   .grid > div:not(.patient-card) h4 {
-  color: var(--ma-brown-800) !important;
-  font-weight: 800 !important;
-}
-
-section .grid > div:not(.patient-card) p,
-section .grid > div:not(.patient-card) span,
-main   .grid > div:not(.patient-card) p,
-main   .grid > div:not(.patient-card) span {
-  color: var(--ma-text-secondary) !important;
-  font-size: 0.88rem !important;
-  font-weight: 400 !important;
-}
-
-section .grid > div:not(.patient-card):hover,
-main   .grid > div:not(.patient-card):hover {
-  border-color: var(--ma-gold-500) !important;
-  background-color: var(--ma-bg-card) !important;
-}
-
-/* ── C) مسافة بين Technology Stack و The Team ─────────────────── */
-[class*="team"],
-[id*="team"],
-section:has([class*="team"]),
-section:has([id*="team"]) {
-  margin-top: 4rem !important;
-  padding-top: 2rem !important;
-}
-
-/* ── D) إطار عريض بني داكن على صناديق Tech Stack ──────────────── */
-[class*="tech"] .grid > div,
-[class*="stack"] .grid > div,
-[id*="tech"] .grid > div,
-/* fallback: الصناديق المستقلة في قسم Tech */
-section .grid > div:not(.patient-card):not([class*="team"]) {
-  border: 2.5px solid var(--ma-brown-700) !important;
-}
-
-/* ── E) استثناء مطلق: بطاقات المرضى تبقى كريمية بيضاء ─────────── */
-.patient-card,
-.grid > div.patient-card {
-  background-color: var(--ma-bg-card) !important;
-  border: 1.5px solid var(--ma-border-subtle) !important;
-  border-top: 3px solid var(--ma-gold-500) !important;
-}
-
-.patient-card *,
-.grid > div.patient-card * {
-  color: var(--ma-text-body) !important;
-}
-
-.patient-card h2,
-.patient-card h3,
-.grid > div.patient-card h2,
-.grid > div.patient-card h3 {
-  color: var(--ma-text-heading) !important;
-  font-weight: 800 !important;
-}
-
-/* ── F) القاعدة الذهبية المطلقة النهائية:
-   أي عنصر (زر، div، span) خلفيته بنية غامقة → نصه بيج دائماً
-   تأتي هذه القاعدة آخر شيء في الملف عشان تتغلب على كل شيء     */
-[style*="background-color: #2C"],
-[style*="background-color:#2C"],
-[style*="background-color: #1A"],
-[style*="background-color:#1A"],
-[style*="background-color: #3D"],
-[style*="background-color:#3D"] {
-  color: #F5EFE6 !important;
-}
-
-[style*="background-color: #2C"] *,
-[style*="background-color:#2C"] *,
-[style*="background-color: #1A"] *,
-[style*="background-color:#1A"] *,
-[style*="background-color: #3D"] *,
-[style*="background-color:#3D"] * {
-  color: #F5EFE6 !important;
 }
