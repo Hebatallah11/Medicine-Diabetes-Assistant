@@ -33,13 +33,13 @@ Instead of relying purely on an LLM's internal knowledge (which can be outdated 
 
 | | |
 |---|---|
-| 🤖 **LangGraph Agent** | Structured, stateful, multi-step reasoning pipeline instead of a single black-box prompt |
-| 🔎 **RAG-Powered Retrieval** | Grounded, citation-friendly answers using ChromaDB vector search over medical references |
-| 🧠 **Flexible LLM Access** | Swap between models via OpenRouter without changing application code |
-| 🌐 **Web Interface** | Lightweight, accessible web app for interactive querying |
-| 🐳 **Containerized** | Fully Dockerized for consistent, reproducible deployment anywhere |
-| ⚙️ **Configurable Pipeline** | Centralized settings for model choice, chunk size, and retrieval depth (top-k) |
-| 🧪 **Test Coverage** | Dedicated test suite to validate agent and retrieval behavior |
+|  **LangGraph Agent** | Structured, stateful, multi-step reasoning pipeline instead of a single black-box prompt |
+|  **RAG-Powered Retrieval** | Grounded, citation-friendly answers using ChromaDB vector search over medical references |
+|  **Flexible LLM Access** | Swap between models via OpenRouter without changing application code |
+|  **Web Interface** | Lightweight, accessible web app for interactive querying |
+|  **Containerized** | Fully Dockerized for consistent, reproducible deployment anywhere |
+|  **Configurable Pipeline** | Centralized settings for model choice, chunk size, and retrieval depth (top-k) |
+|  **Test Coverage** | Dedicated test suite to validate agent and retrieval behavior |
 
 ---
 
@@ -122,7 +122,7 @@ docker-compose up --build
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Medicine-Diabetes-Assistant/
