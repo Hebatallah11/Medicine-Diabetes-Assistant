@@ -21,7 +21,7 @@
 
 ## 📖 Overview
 
-**Medicine Assistant** is an intelligent agent that supports clinicians in selecting appropriate **medicines and dosages**, with a focus on **diabetes care**. It combines a **LangGraph-based reasoning agent** with a **Retrieval-Augmented Generation (RAG)** pipeline, using **ChromaDB** as a vector store and **OpenRouter** LLMs for reasoning — so recommendations are grounded in retrieved medical reference data rather than model guesswork alone.
+**Medicine Assistant** is an intelligent agent that supports clinicians in selecting appropriate **medicines and dosages**, with a focus on **diabetes care**. It combines a **LangGraph-based reasoning agent** with a **Retrieval-Augmented Generation (RAG)** pipeline, using **ChromaDB** as a vector store and **OpenRouter** LLMs for reasoning, so recommendations are grounded in retrieved medical reference data rather than model guesswork alone.
 
 Instead of relying purely on an LLM's internal knowledge (which can be outdated or hallucinated), the agent retrieves relevant, trusted context first, then reasons over it step by step to produce a transparent, traceable recommendation.
 
@@ -57,11 +57,11 @@ flowchart LR
     G --> H[Web Interface]
 ```
 
-1. **Query intake** — the user submits a medicine or dosage question through the web interface.
-2. **Agent orchestration** — the LangGraph agent manages state and decides what information is needed.
-3. **Retrieval** — relevant chunks are pulled from ChromaDB based on semantic similarity.
-4. **Grounded generation** — the retrieved context is passed to the LLM via OpenRouter to produce a well-supported answer.
-5. **Response** — the final recommendation and reasoning are returned to the user.
+1. **Query intake**: the user submits a medicine or dosage question through the web interface.
+2. **Agent orchestration**: the LangGraph agent manages state and decides what information is needed.
+3. **Retrieval**: relevant chunks are pulled from ChromaDB based on semantic similarity.
+4. **Grounded generation**: the retrieved context is passed to the LLM via OpenRouter to produce a well-supported answer.
+5. **Response**: the final recommendation and reasoning are returned to the user.
 
 ---
 
@@ -180,11 +180,11 @@ Contributions, issues, and feature requests are welcome!
 
 This project was built with dedication by:
 
-| Contributor | GitHub |
+| Contributor | Rule |
 |---|---|
-| **Salma Talat Shaheen** | [@Salma-Talat-Shaheen](https://github.com/Salma-Talat-Shaheen) |
-| **Hebatallah** | — |
-| **Zahraa** | — |
+| **Salma Shaheen** | Development |
+| **Hebatallah AbuHarb** | Development |
+| **Zahraa Alderawi** | Development |
 
 ---
 
