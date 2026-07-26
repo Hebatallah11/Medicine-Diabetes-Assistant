@@ -19,7 +19,7 @@
 
 ---
 
-## 📖 Overview
+##  Overview
 
 **Medicine Assistant** is an intelligent agent that supports clinicians in selecting appropriate **medicines and dosages**, with a focus on **diabetes care**. It combines a **LangGraph-based reasoning agent** with a **Retrieval-Augmented Generation (RAG)** pipeline, using **ChromaDB** as a vector store and **OpenRouter** LLMs for reasoning, so recommendations are grounded in retrieved medical reference data rather than model guesswork alone.
 
@@ -29,7 +29,7 @@ Instead of relying purely on an LLM's internal knowledge (which can be outdated 
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 | | |
 |---|---|
@@ -43,7 +43,7 @@ Instead of relying purely on an LLM's internal knowledge (which can be outdated 
 
 ---
 
-## 🧭 How It Works
+##  How It Works
 
 ```mermaid
 flowchart LR
@@ -65,7 +65,7 @@ flowchart LR
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -79,7 +79,7 @@ flowchart LR
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - [Conda](https://docs.conda.io/) (recommended) or a Python 3.10 virtual environment
@@ -147,7 +147,7 @@ Medicine-Diabetes-Assistant/
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 pytest tests/
@@ -155,7 +155,7 @@ pytest tests/
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] Expand reference dataset beyond diabetes to additional chronic conditions
 - [ ] Add source citations directly in the UI for each recommendation
@@ -164,7 +164,7 @@ pytest tests/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues, and feature requests are welcome!
 
@@ -176,7 +176,7 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
-## 👥 Team
+##  Team
 
 This project was built with dedication by:
 
@@ -188,7 +188,7 @@ This project was built with dedication by:
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
 
